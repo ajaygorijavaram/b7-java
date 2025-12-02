@@ -3,6 +3,10 @@ pipeline {
     agent { 
         label 'built-in' 
     }
+    tools {
+        maven 'Maven3'
+        jdk 'java8'
+    }
 
     stages {
 
